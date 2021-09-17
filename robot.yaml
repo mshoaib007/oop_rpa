@@ -1,0 +1,14 @@
+tasks:
+  entrypoint:
+    command:
+      - python
+      - with_rpa_sel.py
+
+condaConfigFile: condaconfig.yaml
+artifactsDir: output
+ignoreFiles:
+  - .gitignore
+PATH:
+  - .
+PYTHONPATH:
+  - .
