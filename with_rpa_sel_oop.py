@@ -121,18 +121,6 @@ class ITDASHBOARD():
     def get_pdfs(self):
 
         self.page_source3=self.browser.get_source
-
-        self.a=self.browser.get_webelements('xpath://a')
-        self.l1=[]
-        for i in self.a:
-            self.l1.append(self.browser.get_text(i))
-        for i in self.l1:
-            if '005' not in i:
-                self.l1.remove(i)
-        self.l2=[]
-        for i in self.l1:
-            if '005-' in i:
-                self.l2.append(i)
         self.links=[]
         for a in self.soup2.find_all('a',href=True):
             self.links.append(a['href'])
