@@ -41,12 +41,12 @@ class ITDASHBOARD():
             self.name.append(i.text)
         for i in self.soup1[0].find_all('span',{'class':'h1 w900'}):
             self.money.append(i.text)
-            self.data1=zip(self.name,self.money)
-            self.data=dict(self.data1)
-            self.df=pd.DataFrame(list(zip(self.name,self.money)))
-            self.df.columns=['Agency Name','Agency Spendings']
+        self.data1=zip(self.name,self.money)
+        self.data=dict(self.data1)
+        self.df=pd.DataFrame(list(zip(self.name,self.money)))
+        self.df.columns=['Agency Name','Agency Spendings']
 
-            self.df.to_excel('Agencies.xlsx')
+        self.df.to_excel('Agencies.xlsx')
     def get_individual_investments(self):
         
             
