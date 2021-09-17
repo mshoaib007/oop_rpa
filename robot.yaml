@@ -2,7 +2,7 @@ tasks:
   entrypoint:
     command:
       - python
-      - with_rpa_sel.py
+      - with_rpa_sel_oop.py
 
 condaConfigFile: condaconfig.yaml
 artifactsDir: output
