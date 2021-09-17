@@ -143,7 +143,7 @@ class ITDASHBOARD():
         self.ll1=[]
         self.len_links=len(self.links)
         self.half_links=self.len_links//2
-        for i in range(3):
+        for i in range(self.half_links):
             self.ll1.append(self.links[i])
         for i in self.ll1:
             self.up=self.url+i
