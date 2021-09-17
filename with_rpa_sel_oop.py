@@ -1,7 +1,4 @@
 from RPA.Browser.Selenium import Selenium
-from RPA.Excel.Files import Files
-from RPA.Tables import Tables
-from RPA.Excel.Application import Application
 import time
 import re
 from bs4 import BeautifulSoup
